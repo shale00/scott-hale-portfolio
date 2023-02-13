@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: #838383cd;
+    color: black;
+  }
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    text-align: left;
+    font-size: larger;
+    padding: 20px;
+    color: whitesmoke;
+    background-image: url(../images/kirill-tonkikh-GtgdYsl2TV0-unsplash.jpg);
+    background-size: cover;
+  }
+
+
+nav ul { 
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    min-width: 300px;
+    text-indent: 30px;
+  }  
+
+li::marker {
+    content: none;
+
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 150%;
+  } 
+
+nav a:hover {
+    color: #fff;
+  }
+
+
+.photo {
+    width: auto;
+    height: ;
+    margin: 20px auto;
+}
+
+.studio {
+    position: relative;
+    width: auto;
+    height: 250px;
+}
+
+.about-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 500px;
+    font-size: larger;
+
+}
+
+.content {
+    width: auto;
+    display: inline-block;
+    /*margin: 0px 0px 0px 200px;*/
+    float: right;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: black;
+    padding: 80px;
+    text-align: left;
+
+}
+
+.work {
+
+}
+
+
+.apps {
+
+
+}
+.links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+
+}

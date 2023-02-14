@@ -9,16 +9,25 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <nav class="nav">
+            <a href="#home">Home</a>
             <a href="#about-me">About Me</a>
             <a href="#my-work">My Work</a>
             <a href="#contact-me">Contact Me</a>
             <a href="#resume">Resume</a>
         </nav>
-        <div class="name"><h1>Scott Hale</h1></div>
+        <div class="name"><h1 class="my-name">Scott Hale</h1>
+            
+            <!-- <img class="pic" src=".//assets/images/38A03913-D346-4DFC-B29F-3AA767A6F509.jpeg" alt="at the beach"> -->
+        </div>
+        <div class="name">
+            <p class="job">Full Stack Web Developer</p>
+        </div>
+        
     </header>
 
+    <main class="main">
     <section id="about-me">
         <div class="row">
             <aside class="subject">
@@ -40,35 +49,45 @@
                 </h2>
             </aside>
             <div class="apps">
+                <a href="https://shale00.github.io/prework-study-guide">
                 <section class="card">
                     <header class="app-header">Pre-work Study Guide</header>
-                    <img src="" alt="">
+                    <div id="guide-img" class="app-img" alt="notebook on desk" ></div>
+
                     <p class="description">A cheat-sheet for students doing the pre-work.</p>
                 </section>
+                </a>
 
+                <a href="shale00.github.io/Horiseon-code-refactor/Develop/index.html">
                 <section class="card">
                     <header class="app-header">Horiseon Code Refactor</header>
-                    <img src="" alt="">
+                    <div id="refactor-img" class="app-img" alt="code"></div>
                     <p class="description">Refactoring code for tranparency and longevity.</p>
                 </section>
+                </a>
 
+                <a href="">
                 <section class="card">
                     <header class="app-header">Example project</header>
-                    <img src="" alt="">
+                    <div id="example1-img" class="app-img" alt="sheet music"></div>
                     <p class="description">Example project.</p>
                 </section>
+                </a>
 
+                <a href="">
                 <section class="card">
                     <header class="app-header">Example project</header>
-                    <img src="" alt="">
+                    <div id="example2-img" class="app-img" alt="music board"></div>
                     <p class="description">Example project</p>
                 </section>
+                </a>
+
             </div>
         </div>
 
     </section>
 
-    <section class="contact">
+    <section id="contact-me" class="contact">
         <div class="row">
             <aside class="subject">
                 <h2>
@@ -82,7 +101,7 @@
 
         </div>
     </section>
-
+    </main>
 
     
 </body>

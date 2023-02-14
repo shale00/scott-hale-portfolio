@@ -3,6 +3,7 @@
 }*/
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -16,16 +17,17 @@ body {
 
 .header {
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     padding: 20px;
-    text-align: center;
+    text-align: right;
     background-image: url(../images/38A03913-D346-4DFC-B29F-3AA767A6F509.jpeg);
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    min-height: inherit;
+    min-height: 950px;
     z-index: 0;
     position: relative;
+    width: 100%;
 
 
 }
@@ -37,36 +39,78 @@ body {
     z-index: 100;
     left: 0;
     top: 10px;
+    text-indent: 5px;
+    letter-spacing: .5px;
+    display: inline-grid;
+    justify-content: end;
+    padding: 8px;
    
     
 }
 
-.nav a {
-    color: fuchsia;
-    font-size: medium;
+a {
+    color: hsl(0, 0%, 0%);
+    font-size: 22px;
     font-weight: bold;
-    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
 
 .nav a:hover {
     color: #fff;
+    text-decoration: underline;
+    
   }
 
 .header .name {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2.5px;
+}
+
+h1 {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 60px;
+    color: black;
+    font-variant-caps: petite-caps;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+.name .job {
     font-size: xx-large;
+
+}
+
+/* .pic {
+    display: flex;
+    border-radius: 1000px;
+    border-style: solid;
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}*/
+
+.main {
+    background-image: url(../images/wesley-tingey-1TY3MGq-hOQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    
 }
 
 #about-me {
-    background-color: darkcyan;
+    
     background-image: url(../images/D7E10838-3EA7-4FF8-BBCE-158157F3E2E2.jpeg);
     background-size: cover;
-    padding-top: 50px;
+    /* background-color: #959393; */
+    padding-top: 0px;
     padding-bottom: 50px;
-    color: greenyellow;
+    color: black;
 }
 
 .row {
@@ -100,13 +144,14 @@ body {
 #about-me .content {
     position: relative;
     margin-top: 8px;
+    
 
 }
 
 #my-work {
     display: flex;
     flex-wrap: wrap;
-    background-color: darkgrey;
+    
 }
 
 #my-work .row {
@@ -119,14 +164,14 @@ body {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .card {
     border-style: solid;
     border-width: 1px;
-    padding: 10px;
+    padding: 0px;
     margin: 20px;
     flex: 0 0 300px;
     box-shadow: 5px 5px 5px;
@@ -134,9 +179,46 @@ body {
 }
 
 .card header {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background: black;
     color: white;
+    border-radius: 10px 10px 0px 0px;
 }
 
+.card img {
+    max-height: 150px;
+    width: 100%;
+}
+
+.card p {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    size: 10px;
+}
+
+.app-img {
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-position: inherit;
+}
+
+#guide-img {
+    background-image: url(../images/justin-morgan-Hx-4TbpsoIw-unsplash.jpg);
+    height: 500px;
+}
+
+#refactor-img {
+    background-image: url(../images/walkator-klMii3cR9iI-unsplash.jpg);
+}
+
+#example1-img {
+    background-image: url(../images/marius-masalar-rPOmLGwai2w-unsplash.jpg)
+}
+
+#example2-img {
+    background-image: url(../images/dylan-mcleod-VRdZBLqnoMU-unsplash.jpg)
+}

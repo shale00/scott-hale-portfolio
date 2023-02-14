@@ -3,7 +3,9 @@
 }*/
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    overflow: scroll;
 }
 
 body {
@@ -86,81 +88,86 @@ h1 {
 
 }
 
-/* .pic {
-    display: flex;
-    border-radius: 1000px;
-    border-style: solid;
-    width: 50%;
-    height: auto;
-    max-width: 100%;
-}*/
-
 .main {
     background-image: url(../images/wesley-tingey-1TY3MGq-hOQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-size: auto;
+    color: whitesmoke;
     
 }
 
+h2 {
+    display: block;
+    text-align: left;
+}
+
 #about-me {
-    
-    background-image: url(../images/D7E10838-3EA7-4FF8-BBCE-158157F3E2E2.jpeg);
+    /* background-image: url(../images//nordwood-themes-9a58YsGiTPk-unsplash.jpg);
     background-size: cover;
-    /* background-color: #959393; */
     padding-top: 0px;
-    padding-bottom: 50px;
-    color: black;
+    padding-bottom: 50px; */
+    background-color: #312e2e;
+    border: solid;
+    border-color: black;
+    min-height: 150px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    /* width: 95%; */
     max-width: 1000px;
     margin-left: 50px;
+    min-width: 80%;
 }
 
 .row .subject {
     display: flex;
-    flex: 1;
+    flex: 1.5;
     flex-direction: column;
+    font-variant-caps: petite-caps;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
 }
 
 .row .content {
     flex: 3;
 }
 
-#about-me h2 span {
+/* #about-me h2 span {
     border-bottom: 5px double black;
     padding-bottom: 2px;
     position: relative;
     top: 0px;
     left: 0px;
-    font-size: 25px;
+    font-size: 25px; */
 
 }
 
 #about-me .content {
     position: relative;
     margin-top: 8px;
-    
 
 }
 
 #my-work {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
-#my-work .row {
-    
+#my-work .row h2 {
+    padding-top: 10px;
+    text-align: end;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    animation: effect 2s linear infinite;
+/* css text animation, https://www.geeksforgeeks.org/how-to-create-text-color-animation-using-html-and-css/ */
 }
 
 .apps {
     flex: 4;
-    background-color:;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -222,3 +229,50 @@ h1 {
 #example2-img {
     background-image: url(../images/dylan-mcleod-VRdZBLqnoMU-unsplash.jpg)
 }
+
+#contact-me {
+    background-image: url(../images//nordwood-themes-9a58YsGiTPk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+    border: solid;
+    border-color: #312e2e;
+}
+
+.contacts {
+    margin: 10px;
+    padding-top: 75px;
+    flex: 3;
+}
+
+.contacts p {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+      width: 50%;
+    }
+    header {
+      background-color: red;
+    }
+  }
+
+
+
+
+
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+                #008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+                #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }

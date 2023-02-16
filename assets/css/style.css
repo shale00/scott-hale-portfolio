@@ -1,11 +1,8 @@
-/*:root {
-    background-color: darkgray;
-}*/
+/* Universal Selectors  */
 * {
     box-sizing: border-box;
     margin: 0px 0px 0px 0px;
     padding: 0;
-    overflow: scroll;
 }
 
 body {
@@ -15,8 +12,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    font-weight: bold;
 }
 
+/* Start of Header selectors */
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -30,8 +29,6 @@ body {
     z-index: 0;
     position: relative;
     width: 100%;
-
-
 }
 
 .nav {
@@ -46,23 +43,11 @@ body {
     display: inline-grid;
     justify-content: end;
     padding: 8px;
-   
-    
-}
-
-a {
-    color: hsl(0, 0%, 0%);
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-
 }
 
 .nav a:hover {
     color: #fff;
     text-decoration: underline;
-    
   }
 
 .header .name {
@@ -84,16 +69,29 @@ h1 {
 }
 
 .name .job {
-    font-size: xx-large;
+    font-size: 24px;
+    text-align: center;
+}
+/* End of header selectors */
 
+/* Start of primary font selectors */
+
+a {
+    color: hsl(0, 0%, 0%);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
+/* End of primary font selectors */
+
+/* Start of main style selectors */
 .main {
     background-image: url(../images/wesley-tingey-1TY3MGq-hOQ-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-size: auto;
-    color: whitesmoke;
+    color: black;
     
 }
 
@@ -102,27 +100,19 @@ h2 {
     text-align: left;
 }
 
-#about-me {
-    /* background-image: url(../images//nordwood-themes-9a58YsGiTPk-unsplash.jpg);
-    background-size: cover;
-    padding-top: 0px;
-    padding-bottom: 50px; */
-    background-color: #312e2e;
-    border: solid;
-    border-color: black;
+/* End of main style selectors */
+
+/* Start of about section selectors (includes contact me selectors) */
+#about {
     min-height: 150px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    /* width: 95%; */
-    max-width: 1000px;
-    margin-left: 50px;
-    min-width: 80%;
 }
 
-.row .subject {
+.row .subject { 
     display: flex;
     flex: 1.5;
     flex-direction: column;
@@ -130,49 +120,46 @@ h2 {
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 20px;
+    padding-left: 10px;
 }
-
-.row .content {
-    flex: 3;
-}
-
-/* #about-me h2 span {
-    border-bottom: 5px double black;
-    padding-bottom: 2px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    font-size: 25px; */
-
-}
-
-#about-me .content {
+#about .content, .contacts, .contacts p {
     position: relative;
     margin-top: 8px;
-
-}
-
-#my-work {
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-#my-work .row h2 {
-    padding-top: 10px;
-    text-align: end;
-    transform: translate(-50%, -50%);
-    color: transparent;
-    animation: effect 2s linear infinite;
-/* css text animation, https://www.geeksforgeeks.org/how-to-create-text-color-animation-using-html-and-css/ */
-}
-
-.apps {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 20px;
+    font-size: 22px;
+    margin-right: 115px;
     flex: 4;
-    padding: 50px;
+
+}
+
+/* End of about section selectors */
+
+/* Start of my work selectors*/
+
+#work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    flex: 1;
+}
+
+.row .apps {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 100px;
+    
+}
+
+#work .row .subject{  
+    flex: .5;
+}  
+
+.apps a {
+    margin-top: 10px;
+    vertical-align: middle;
 }
 
 .card {
@@ -180,9 +167,9 @@ h2 {
     border-width: 1px;
     padding: 0px;
     margin: 20px;
-    flex: 0 0 300px;
     box-shadow: 5px 5px 5px;
     border-radius: 10px;
+    width: 200px;
 }
 
 .card header {
@@ -194,28 +181,31 @@ h2 {
 }
 
 .card img {
-    max-height: 150px;
     width: 100%;
 }
 
-.card p {
-    text-align: center;
-    background-color: black;
-    color: #fff;
-    padding: 5px;
-    size: 10px;
-}
-
 .app-img {
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-size: cover;
     background-position: inherit;
 }
 
+.app-img:hover {
+    cursor: pointer;
+    image-resolution: ;
+}
+
 #guide-img {
     background-image: url(../images/justin-morgan-Hx-4TbpsoIw-unsplash.jpg);
-    height: 500px;
+    height: 253px;
+    width: auto;
+}
+
+.apps #first-card {
+    height: 300px;
+    width: 300px;
+
 }
 
 #refactor-img {
@@ -230,49 +220,68 @@ h2 {
     background-image: url(../images/dylan-mcleod-VRdZBLqnoMU-unsplash.jpg)
 }
 
-#contact-me {
-    background-image: url(../images//nordwood-themes-9a58YsGiTPk-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
+/* End of my work selectors */
+
+/* Start of remaining contact me selectors */
+#contact {
     min-height: 150px;
-    border: solid;
-    border-color: #312e2e;
 }
+/* End of remaining contact me selectors */
 
-.contacts {
-    margin: 10px;
-    padding-top: 75px;
-    flex: 3;
-}
-
-.contacts p {
-    font-size: large;
-    font-family: sans-serif;
-}
+/* Start of media query selectors */
 
 @media screen and (max-width: 500px) {
-    .card {
-      width: 50%;
-    }
-    header {
-      background-color: red;
-    }
-  }
-
-
-
-
-
-
-@keyframes effect {
-    0% {
-        background: linear-gradient(
-                #008000, #00FF00);
-        -webkit-background-clip: text;
+    * {
+        overflow: scroll;
+      }
     }
 
-    100% {
-        background: linear-gradient(
-                #3CE7D7, #000FFF);
-        -webkit-background-clip: text;
+@media screen and (max-width: 1010px) {
+    .nav a {
+        font-size: 18px;
+      }
     }
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 18px;
+      }
+    }
+
+@media screen and (max-width: 650px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 20px;
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    .my-name {
+        font-size: 40px;
+      }
+    body {
+        font-size: 24px;
+    }
+    a, p, .subject {
+        font-size: 16px;
+    }
+    .subject span {
+        font-size: 28px;
+    }
+    .apps {
+        display: inline-table;
+        overflow: initial;
+    }
+    .app-img {
+        height: 70px;
+    }
+    #guide-img {
+        height: 200px;
+    }
+    .apps #first-card {
+        height: 258px;
+        width: 200px;
+    }
+    }
+/* End of media query selectors */

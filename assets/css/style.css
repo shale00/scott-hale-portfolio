@@ -54,22 +54,28 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     letter-spacing: 2.5px;
+
+    text-align: left;
 }
 
 h1 {
-    font-family: cursive;
-    font-style: italic;
+    /* font-family: cursive;
+    font-style: italic; */
     font-size: 60px;
     color: black;
-    font-variant-caps: petite-caps;
-    padding-top: 100px;
+    /* font-variant-caps: petite-caps; */
+    padding-top: 70px;
     margin-top: 20px;
 }
 
 .name .job {
     font-size: 24px;
+    text-align: center;
+}
+
+#job-descr {
     text-align: center;
 }
 /* End of header selectors */
@@ -126,8 +132,8 @@ h2 {
     position: relative;
     margin-top: 8px;
     padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 20px;
+    padding-right: 50px; 
+    padding-left: 50px;
     font-size: 22px;
     margin-right: 115px;
     flex: 4;
@@ -189,6 +195,7 @@ h2 {
     width: 100%;
     background-size: cover;
     background-position: inherit;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .app-img:hover {
@@ -199,6 +206,7 @@ h2 {
     background-image: url(../images/justin-morgan-Hx-4TbpsoIw-unsplash.jpg);
     height: 253px;
     width: auto;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .apps #first-card {
@@ -228,6 +236,7 @@ h2 {
 /* End of remaining contact me selectors */
 
 /* Start of media query selectors */
+
 
 @media screen and (max-width: 500px) {
     * {
@@ -283,4 +292,12 @@ h2 {
         width: 200px;
     }
     }
+
+    @media screen and (max-width: 440px) {
+        #about .content, .contacts, .contacts p {
+            margin-right: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
 /* End of media query selectors */

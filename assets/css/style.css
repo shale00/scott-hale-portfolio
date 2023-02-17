@@ -54,18 +54,13 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
     letter-spacing: 2.5px;
-
     text-align: left;
 }
 
 h1 {
-    /* font-family: cursive;
-    font-style: italic; */
     font-size: 60px;
     color: black;
-    /* font-variant-caps: petite-caps; */
     padding-top: 70px;
     margin-top: 20px;
 }
